@@ -1,6 +1,8 @@
 jQuery(document).ready(function($) {
   
- 
+  $('[data-lang]').select2({
+    width: '55px'
+  });
   //tabs
 //   $('[data-can]').on('click', function() {
 //       $(this).addClass('active').siblings().removeClass('active').closest('.can__wrap').find('ul.can__list').removeClass('active').eq($(this).index()).addClass('active');
