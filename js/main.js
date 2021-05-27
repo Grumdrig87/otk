@@ -3,6 +3,32 @@ jQuery(document).ready(function($) {
   $('[data-lang]').select2({
     width: '55px'
   });
+  //inputs check
+  var label = [$("[data-input]").parent().find('label').text()];
+  console.log(label);
+  $("[data-input]").change(function(){
+    $(this).each(function(){
+      input = $(this).val().trim();
+      if(input) {
+        var parent = $(this).parent().index();
+        console.log(parent);
+        $(this).parent().find('label').text(label[parent]);
+        console.log($(this).parent().eq($(this).index()).find('label').text(label[parent]));
+      }
+    });
+  });
+  $("[data-subm]").click(function(){
+    $("[data-input]").each(function(){
+      input = $(this).val().trim();
+      if(!input) {
+        $(this).parent().addClass('alert');
+        $(this).parent().find('label').text('Ошибка заполнения');
+        $(this).attr('placeholder','Обязательное поле')
+      } else {
+        $(this).parent().removeClass('alert');
+      }
+    })
+  });
   //tabs
 //   $('[data-can]').on('click', function() {
 //       $(this).addClass('active').siblings().removeClass('active').closest('.can__wrap').find('ul.can__list').removeClass('active').eq($(this).index()).addClass('active');
