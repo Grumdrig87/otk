@@ -3,6 +3,29 @@ jQuery(document).ready(function($) {
   $('[data-lang]').select2({
     width: '55px'
   });
+  //search 
+  $('[data-search]').click(function(){
+    $(this).next().addClass('viewed');
+    $('body').toggleClass('open');
+  })
+
+  //miss click
+  function closeSearch () {
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+      var div = $("[data-sline]"); // тут указываем ID элемента
+      if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        $('[data-search]').next().removeClass('viewed');
+        $('body').removeClass('open');
+      }
+    });
+  };
+
+  closeSearch();
+  //servicepage
+  $('[data-service]').click(function(){
+    $(this).toggleClass('opened');
+  })
   //inputs check
   var label = $("[data-input]").parent().find('label span').each(function() {$(this).text()})
   var labelNews = $("[data-inputnews]").parent().find('label span').each(function() {$(this).text()})
