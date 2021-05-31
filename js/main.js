@@ -87,28 +87,45 @@ jQuery(document).ready(function($) {
 //   });
   
 //   //slider
-//   if (jQuery('[data-writers]').length > 0) {
-//       $('[data-writers]').slick({
-//           dots: true,
-//           speed: 300,
-//           slidesToShow: 2,
-//           responsive: [{
-//               breakpoint: 768,
-//               settings: {
-//                   slidesToShow: 1
-//               }
-//           }, ]
-//       });
-//   }
-  
+  if (jQuery('[data-review]').length > 0) {
+      $('[data-review]').slick({
+          dots: false,
+          speed: 300,
+          slidesToShow: 1,
+          rows: 2,
+          // responsive: [{
+          //     breakpoint: 768,
+          //     settings: {
+          //         slidesToShow: 1
+          //     }
+          // }, ]
+      });
+  }
+  // showmore
+  $("[data-revtxt]").shorten({
+    "showChars" : 420,
+    "moreText"  : "Читать дальше",
+    "lessText"  : "Скрыть",
+  });
   
 //   // faq
-//   if (jQuery('[data-faq]').length > 0) {
-//       $('[data-faq]').click(function() {
-//           $(this).find('.faq__title').toggleClass('open');
-//           $(this).find('p').slideToggle(300);
-//       })
-//   }
+  if (jQuery('[data-faq]').length > 0) {
+      $('[data-faq]').click(function() {
+        
+        var faqHeight = $(this).find('.faq__item').outerHeight(true);
+        if ($(this).hasClass('open')) {
+          $(this).css({'height': 'auto'});
+          $(this).find('.faq__answer').slideUp(300);
+          $(this).removeClass('open');
+        } else {
+          $(this).addClass('open').siblings().removeClass('open');
+          $(this).css({'height': faqHeight});
+          $('[data-faq]').find('.faq__answer').hide();
+          $(this).find('.faq__answer').slideDown(300);
+        };
+        
+      })
+  }
 //   // burger
 //   $('[data-burger]').click(function() {
 //       $('html').toggleClass("open");
