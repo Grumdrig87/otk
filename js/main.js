@@ -101,6 +101,28 @@ jQuery(document).ready(function($) {
           // }, ]
       });
   }
+
+  if (jQuery('[data-example]').length > 0) {
+    
+    $('[data-example]').slick({
+        dots: false,
+        speed: 300,
+        slidesToShow: 1,
+        infinite: false,
+        // responsive: [{
+        //     breakpoint: 768,
+        //     settings: {
+        //         slidesToShow: 1
+        //     }
+        // }, ]
+    });
+    $('[data-zoom]').click(function(){
+      var current = $(this).parent().find('.slick-current .example__img').attr('href'),
+          fancy = $(this).parent().find('.slick-current .example__img').attr('data-fancybox');
+      $(this).attr('href', current);
+      $(this).attr('data-fancybox',fancy);
+    });
+}
   // showmore
   $("[data-revtxt]").shorten({
     "showChars" : 420,

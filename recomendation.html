@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<title>OTK</title>
+	<meta name="keywords" content="OTK" />
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+	<!-- OG Tags -->
+	<meta property="og:title" content="OTK" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="img/logo.png" />
+    <meta property="og:site_name" content="OTK">
+    <meta property="og:description" content="" />
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="black-scr" data-blkscr></div>
+    <div class="wrap">
+        <header class="header">
+            <div class="header__top">
+                <div class="container df aic jcfe">
+                    <div class="header__top-nav" data-topnav>
+                        <ul class="df aic">
+                            <li class="menu-item">
+                                <a href="contacts.html">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="blog.html">
+                                    Блог
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="about.html">
+                                    о компании
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__select">
+                        <select name="lang" data-lang>
+                            <option value="rus">RUS</option>
+                            <option value="eng">ENG</option>
+                        </select>
+                    </div>
+                    <a href="#" class="header__login df aic ff-mon">
+                        <svg class="wh24"><use xlink:href="img/sprite.svg#login"></use></svg>
+                        Вход в кабинет
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header__wrap df aic jcsb">
+                    <a href="index.html" class="header__logo">
+                        <img src="img/logo.png" alt="logo">  
+                    </a>
+                    <div class="header__search">
+                        <svg class="wh24 search-i" data-search><use xlink:href="img/sprite.svg#search"></use></svg>
+                        <div class="header__search-line trans">
+                            <div class="header__search-inpwrap" data-sline>
+                                <input type="search" name="s" class="header__search-input">
+                                <button>
+                                    <svg class="wh40 search-i"><use xlink:href="img/sprite.svg#search"></use></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__contacts df aifs">
+                        <div class="header__item df fdc header__phones">
+                            <svg class="wh24"><use xlink:href="img/sprite.svg#phone"></use></svg>
+                            <a href="tel:+79037224424" class="header__phone ff-mon">
+                                +7(903) 722-44-24
+                            </a>
+                            <a href="tel:+74951206589" class="header__phone ff-mon">
+                                +7(495) 120-65-89
+                            </a>
+                        </div>
+                        <div class="header__item df fdc header__mail">
+                            <svg class="wh24"><use xlink:href="img/sprite.svg#mail"></use></svg>
+                            <a href="mailto:rf@otk-group.ru" class="header__email ff-mon">
+                                rf@otk-group.ru
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__item df fdc header__time">
+                        <svg class="wh24"><use xlink:href="img/sprite.svg#time"></use></svg>
+                        <span class="ff-mon">
+                            Пн-Чт: 9:00-19:00
+                        </span>
+                        <span class="ff-mon">
+                            Пт: 9:00-18:00
+                        </span>
+                    </div>
+                    <a href="#" class="btn">
+                        Связаться с нами
+                    </a>
+                    <div class="menu_btn" data-burger>
+                        <div class="bar" data-id="bar"></div>
+                        <div class="bar" data-id="bar"></div>
+                        <div class="bar" data-id="bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-l df aic jcsb">
+                <nav class="header__nav" data-nav>
+                    <ul class="df aic jcsb">
+                        <li class="menu-item">
+                            <a href="#">
+                                для КОМПАНИЙ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                для частных лиц
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                ЮРИДИЧЕСКИЕ УСЛУГИ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                НАЛОГОВОЕ КОНСУЛЬТИРОВАНИЕ
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                ЦЕНТР РАЗВИТИЯ БИЗНЕСА В РОССИИ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn order__btn">
+                    онлайн-заказ
+                </a>
+            </div>
+        </header>
+        <div class="inner__page">
+            <div class="container">
+                <div class="breadcrumbs df aic">
+                    <span>
+                        <a class="breadcrumbs__link" href="index.html"> 
+                            <span>
+                                Главная  
+                            </span>
+                        </a>
+                    </span>
+                    <span class="breadcrumbs__separator"></span>
+                    <span>
+                        <a class="breadcrumbs__link" href="about.html"> 
+                            <span>
+                                О компании  
+                            </span>
+                        </a>
+                    </span>
+                    <span class="breadcrumbs__separator"></span>
+                    <span class="breadcrumbs__current">
+                        Наши рекомендации
+                    </span>
+                </div>
+                <h1 class="title-m">
+                    НАШИ РЕКОМЕНДАЦИИ
+                </h1>
+            </div>
+        </div>
+        <section class="recomend">
+            <div class="container">
+                <div class="article recomend__txt">
+                    <p>
+                        Мы гордимся тем, что Группа компаний ОТК своей качественной работой заслужило репутацию надежного и ответственного партнера: большая часть наших новых клиентов приходит к нам по рекомендации существующих клиентов и даже уходящих с рынка конкурентов. Со многими крупными российскими и западными компаниями у нас сложились замечательные партнерские отношения — свидетельством тому многолетнее и плодотворное сотрудничество и перспективные проекты на будущее.
+                    </p>
+                    <h5>
+                        В числе наших клиентов — компании, осуществляющие свою деятельность в различных сферах:
+                    </h5>
+                    <ul>
+                        <li>
+                            юриспруденции;
+                        </li>
+                        <li>
+                            машиностроении;
+                        </li>
+                        <li>
+                            нефтепереработке;
+                        </li>
+                        <li>
+                            финансовой деятельности;
+                        </li>
+                        <li>
+                            розничной и оптовой торговле;
+                        </li>
+                        <li>
+                            медицине;
+                        </li>
+                        <li>
+                            строительстве;
+                        </li>
+                        <li>
+                            рекламе;
+                        </li>
+                        <li>
+                            и многих других.
+                        </li>
+                    </ul>
+                </div>
+                <div class="recomend__wrap df fww">
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                    <div class="recomend__itemwrap">
+                        <a href="img/demo/decoral.jpg" class="recomend__item" data-fancybox>
+                            <img src="img/demo/decoral.jpg" alt="decoral">
+                            <svg class="wh30"><use xlink:href="img/sprite.svg#search"></use></svg>
+                        </a>
+                    </div>
+                </div>
+                <ul class="pagination df aic jcc">
+                    <li>
+                        <a class="prev page-arrow df aic jcc" href="#">
+                            <
+                        </a>
+                    </li>
+                    <li class="active">
+                        <span class="page-numbers df aic jcc current">1</span>
+                    </li>
+                    <li>
+                        <a class="page-numbers df aic jcc" href="#">2</a>
+                    </li>
+                    <li>
+                        <span class="page-dots df aic jcc">...</span>
+                    </li>
+                    <li>
+                        <a class="page-numbers df aic jcc" href="#">5</a>
+                    </li>
+                    <li>
+                        <a class="next page-arrow df aic jcc" href="#">
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="container">
+                <h2 class="title-l">
+                    Хотите быть в курсе новостей
+                </h2>
+                <p>
+                    Если вы работаете или планируете работать в иностранной компании, то вы обязательно столкнетесь с вопросами, связанными с оформлением иностранных граждан. Для получения основных знаний по этому вопросу приглашаем вас на наш вводный курс
+                </p>
+                <form action="post" class="newsletter__form">
+                    <div class="newsletter__help quest__form-wrap df aic">
+                        <div class="quest__inp-wrap newsletter__item">
+                            <input type="text" name="name" id="name2" class="quest__input" required data-inputnews>
+                            <label for="name2">
+                                <span>
+                                    Как вас зовут
+                                </span>
+                            </label>
+                        </div>
+                        <div class="quest__inp-wrap newsletter__item">
+                            <input type="email" name="email" id="email2" class="quest__input" required data-inputnews>
+                            <label for="email2">
+                                <span>
+                                    Ваш E-mail
+                                </span>
+                            </label>
+                        </div>
+                        <input type="submit" value="Подписаться" class="btn trans" data-submnews>
+                    </div>
+                    <div class="quest__check">
+                        <input type="checkbox" name="soglnews" id="soglnews">
+                        <label for="soglnews">
+                            Нажимая кнопку «Заказать», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <a href="index.html" class="header__logo">
+                    <img src="img/logo-foot.png" alt="logo">  
+                </a>
+                <div class="footer__wrap df jcsb aifs">
+                    <div class="footer__left">
+                        <div class="quest__contacts__item df fdc">
+                            <svg class="contacts__i"><use xlink:href="img/sprite.svg#phonew"></use></svg>
+                            <a href="tel:+79037224424" class="header__phone ff-mon">
+                                +7(903) 722-44-24
+                            </a>
+                            <a href="tel:+74951206589" class="header__phone ff-mon">
+                                +7(495) 120-65-89
+                            </a>
+                        </div>
+                        <div class="quest__contacts__item df fdc">
+                            <svg class="contacts__i"><use xlink:href="img/sprite.svg#mailw"></use></svg>
+                            <a href="mailto:rf@otk-group.ru" class="header__email ff-mon">
+                                rf@otk-group.ru
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="footer__nav">
+                        <ul>
+                            <li class="menu-item">
+                                <a href="#">
+                                    для КОМПАНИЙ
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    для частных лиц
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    ЮРИДИЧЕСКИЕ УСЛУГИ
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    НАЛОГОВОЕ КОНСУЛЬТИРОВАНИЕ
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    ЦЕНТР РАЗВИТИЯ БИЗНЕСА В РОССИИ
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="btn-sec">
+                        Связаться с нами
+                    </a>
+                </div>
+                <div class="footer__soc df aic">
+                    <a href="#" class="footer__link">
+                        <svg class="wh30"><use xlink:href="img/sprite.svg#facebook"></use></svg>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <svg class="wh30"><use xlink:href="img/sprite.svg#twitter"></use></svg>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <svg class="wh30"><use xlink:href="img/sprite.svg#vk"></use></svg>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <svg class="wh30"><use xlink:href="img/sprite.svg#instagram"></use></svg>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <svg class="wh30"><use xlink:href="img/sprite.svg#telegram"></use></svg>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <svg class="wh30"><use xlink:href="img/sprite.svg#whatsapp"></use></svg>
+                    </a>
+                </div>
+                <div class="footer__bottom df aic jcsb">
+                    <p>
+                        © 2021 Все права защищены, копирование преследуется по закону. 
+                        <a href="#">
+                            Политика конфиденциальности
+                        </a>
+                    </p>
+                    <a href="#">
+                        Карта сайта
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <object class="hidden" type="image/svg+xml" data="img/sprite.svg" >Your browser does not support SVG</object>
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/select2/css/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/slick/slick.js"></script>
+    <script type="text/javascript" src="js/jquery.shorten.1.0.js"></script>
+    <script src="js/select2/js/select2.full.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
