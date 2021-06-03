@@ -27,9 +27,11 @@ jQuery(document).ready(function($) {
     $(this).toggleClass('opened');
   })
   //inputs check
-  var label = $("[data-input]").parent().find('label span').each(function() {$(this).text()})
-  var labelNews = $("[data-inputnews]").parent().find('label span').each(function() {$(this).text()})
-  
+  var label = $("[data-input]").parent().find('label span').each(function() {$(this).text()});
+  var labelNews = $("[data-inputnews]").parent().find('label span').each(function() {$(this).text()});
+  var labelPop = $("[data-inputpop]").parent().find('label span').each(function() {$(this).text()});
+  var labelText = $("[data-text]").parent().find('label span').text();
+  var labelPopText = $("[data-textpop]").parent().find('label span').text();
   $("[data-input]").change(function (){
     $(this).each(function(){
       input = $(this).val();
@@ -40,6 +42,22 @@ jQuery(document).ready(function($) {
         $(this).parent().find('label').addClass('checked')
       } else {
         $(this).attr('placeholder','');
+        $(this).parent().find('label').html(labelText);
+        $(this).parent().find('label').removeClass('checked')
+      }
+    });
+  });
+  $("[data-inputpop]").change(function (){
+    $(this).each(function(){
+      input = $(this).val();
+      var parent = $(this).parent().index();
+      if(input) {
+        $(this).parent().find('label').html(labelPop[parent]);
+        $(this).parent().removeClass('alert');
+        $(this).parent().find('label').addClass('checked')
+      } else {
+        $(this).attr('placeholder','');
+        $(this).parent().find('label').html(labelPopText);
         $(this).parent().find('label').removeClass('checked')
       }
     });
@@ -77,6 +95,11 @@ jQuery(document).ready(function($) {
     $("[data-input]").each(requ);
     $("[data-text]").each(requ);
     $("[data-select]").each(requ);
+  });
+  $("[data-submpop]").click(function(){
+    $("[data-inputpop]").each(requ);
+    $("[data-textpop]").each(requ);
+    $("[data-selectpop]").each(requ);
   });
   $("[data-submnews]").click(function(){
     $("[data-inputnews]").each(requ);

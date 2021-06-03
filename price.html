@@ -35,7 +35,7 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="blog.html">
+                                <a href="news.html">
                                     Блог
                                 </a>
                             </li>
@@ -93,14 +93,14 @@
                     </div>
                     <div class="header__item df fdc header__time">
                         <svg class="wh24"><use xlink:href="img/sprite.svg#time"></use></svg>
-                        <span class="ff-mon">
-                            Пн-Чт: 9:00-19:00
+                        <span class="ff-mon df aic jcsb">
+                            Пн-Чт: <span>9:00-19:00</span> 
                         </span>
-                        <span class="ff-mon">
-                            Пт: 9:00-18:00
+                        <span class="ff-mon df aic jcsb">
+                            Пт: <span>9:00-18:00</span>
                         </span>
                     </div>
-                    <a href="#" class="btn">
+                    <a data-fancybox data-src="#contact" href="javascript:;" class="btn">
                         Связаться с нами
                     </a>
                     <div class="menu_btn" data-burger>
@@ -114,7 +114,7 @@
                 <nav class="header__nav" data-nav>
                     <ul class="df aic jcsb">
                         <li class="menu-item">
-                            <a href="#">
+                            <a href="forcompany.html">
                                 для КОМПАНИЙ
                             </a>
                         </li>
@@ -140,7 +140,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="btn order__btn">
+                <a href="https://online-otk.ru/" class="btn order__btn">
                     онлайн-заказ
                 </a>
             </div>
@@ -403,10 +403,10 @@
                                 </label>
                             </div>
                             <div class="quest__inp-wrap">
-                                <textarea name="question" id="question" class="quest__input quest__textarea" required data-text></textarea>
+                                <textarea name="question" id="question" class="quest__input quest__textarea" required data-text data-input></textarea>
                                 <label for="question">
                                     <span>
-                                        Ваша компания
+                                        Задайте вопрос
                                     </span>
                                 </label>
                             </div>
@@ -448,8 +448,8 @@
                                     <div class="quest__contacts__item df fdc">
                                         <svg class="contacts__i"><use xlink:href="img/sprite.svg#place"></use></svg>
                                         <span class="ff-mon">
-                                            129366, Москва, 
-                                            Проспект Мира
+                                            129366, Москва, <br>
+                                            Проспект Мира <br>
                                             д. 150, этаж 3, комната 63
                                         </span>
                                     </div>
@@ -458,10 +458,10 @@
                                     <div class="quest__contacts__item df fdc">
                                         <svg class="contacts__i"><use xlink:href="img/sprite.svg#time"></use></svg>
                                         <span class="ff-mon">
-                                            Пн-Чт: 9:00-19:00
+                                            Пн-Чт:  с  9:00 -19:00
                                         </span>
                                         <span class="ff-mon">
-                                            Пт: 9:00-18:00
+                                            Пт: с 9:00 — 18:00
                                         </span>
                                         <span>
                                             Сб-Вс: выходные дни.
@@ -570,7 +570,7 @@
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#">
+                                <a href="about.html">
                                     О компании
                                 </a>
                             </li>
@@ -613,6 +613,85 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="popup-contact__wrap" id="contact">
+        <div class="popup-contact">
+            <form action="post" class="quest__form popup-form">
+                <h2 class="title-m">
+                    Есть вопросы -  задайте их нам
+                </h2>
+                <div class="quest__form-wrap df fww">
+                    <div class="quest__inp-wrap">
+                        <input type="text" name="name" id="name-pop" class="quest__input" required data-inputpop>
+                        <label for="name-pop">
+                            <span>
+                                Как вас зовут
+                            </span>
+                        </label>
+                    </div>
+                    <div class="quest__inp-wrap">
+                        <input type="text" name="fam" id="fam-pop" class="quest__input" required data-inputpop>
+                        <label for="fam-pop">
+                            <span>
+                                Ваша фамилия
+                            </span>
+                        </label>
+                    </div>
+                    <div class="quest__inp-wrap">
+                        <input type="email" name="email" id="email-pop" class="quest__input" required data-inputpop>
+                        <label for="email-pop">
+                            <span>
+                                Ваш E-mail
+                            </span>
+                        </label>
+                    </div>
+                    <div class="quest__inp-wrap">
+                        <input type="tel" name="tel" id="tel-pop" class="quest__input" required data-inputpop>
+                        <label for="tel-pop">
+                            <span>
+                                Ваш телефон
+                            </span>
+                        </label>
+                    </div>
+                    <div class="quest__inp-wrap quest__arrow">
+                        <select name="city" id="city-pop" class="quest__input" required data-inputpop>
+                            <option value="1" disabled selected></option>
+                            <option value="1">Москва</option>
+                            <option value="1">Москва</option>
+                            <option value="1">Москва</option>
+                        </select>
+                        <label for="city-pop">
+                            <span>
+                                Ваша страна/регион
+                            </span>
+                        </label>
+                    </div>
+                    <div class="quest__inp-wrap">
+                        <input type="text" name="company" id="company-pop" class="quest__input" required data-inputpop>
+                        <label for="company-pop">
+                            <span>
+                                Ваша компания
+                            </span>
+                        </label>
+                    </div>
+                    <div class="quest__inp-wrap">
+                        <textarea name="question" id="question-pop" class="quest__input quest__textarea" required data-textpop data-inputpop></textarea>
+                        <label for="question-pop">
+                            <span>
+                                Задайте вопрос
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <input type="submit" value="Подписаться на рассылку" class="btn trans" data-submpop>
+                <div class="quest__check">
+                    <input type="checkbox" name="sogl" id="sogl-pop">
+                    <label for="sogl-pop">
+                        Я принимаю условия <a href="#">Политика конфиденциальности</a> 
+                    </label>
+                </div>
+            </form>
+        </div>
     </div>
     <object class="hidden" type="image/svg+xml" data="img/sprite.svg" >Your browser does not support SVG</object>
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
