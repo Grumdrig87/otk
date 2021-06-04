@@ -1,5 +1,12 @@
 jQuery(document).ready(function($) {
-  
+  // burger
+  $('[data-burger]').click(function() {
+    $('html').toggleClass("open");
+    $(this).toggleClass("open");
+    $('[data-nav]').toggleClass("open");
+    $('body').toggleClass('open');
+});
+
   $('[data-lang]').select2({
     width: '55px'
   });
@@ -104,11 +111,7 @@ jQuery(document).ready(function($) {
   $("[data-submnews]").click(function(){
     $("[data-inputnews]").each(requ);
   });
-  //tabs
-//   $('[data-can]').on('click', function() {
-//       $(this).addClass('active').siblings().removeClass('active').closest('.can__wrap').find('ul.can__list').removeClass('active').eq($(this).index()).addClass('active');
-//   });
-  
+
 //   //slider
   if (jQuery('[data-review]').length > 0) {
       $('[data-review]').slick({
@@ -171,13 +174,18 @@ jQuery(document).ready(function($) {
         
       })
   }
-//   // burger
-//   $('[data-burger]').click(function() {
-//       $('html').toggleClass("open");
-//       $(this).toggleClass("open");
-//       $('[data-nav]').toggleClass("open");
-//       $('body').toggleClass('open');
-//   });
+   //miss click burger
+   function closeSearch () {
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+      var div = $("[data-blkscr]"); // тут указываем ID элемента
+      if (div.is(e.target)) { // и не по его дочерним элементам
+        $('body').removeClass('open');
+        $('html').removeClass("open");
+        $('[data-burger]').removeClass("open");
+        $('[data-nav]').removeClass("open");
+      }
+    });
+  };
   
   // adaptive
 
